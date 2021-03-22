@@ -16,15 +16,15 @@ function shuffle() {
         arra1[arrLen] = arra1[index];
         arra1[index] = temp;
     }
-    render(arra1);
+    renderElems(arra1);
 }
 function sort() {
     arra1.sort(function (x, y) {
         return x.text - y.text;
     });
-    render(arra1);
+    renderElems(arra1);
 }
-function render(arra1) {
+function renderElems(arra1) {
     document.getElementById('shuffle').innerHTML = '';
 	for(var i = 0; i < arra1.length; i++)
 	{
